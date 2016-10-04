@@ -7,13 +7,11 @@ Do your analysis in MATLAB but create plots in Origin.
 1. Ensure the code in this project is on your MATLAB path and you have Origin installed. Note only works on Windows.
 
 2. Here's a quick example  - ensure you have saved your work in Origin before running this code.
-
 ```matlab
 M2O = M2OPlot();
 M2O.PlotScatter([1 2 3 4],[2 4 6 8],'PlotName','green');
 ```
-
-3. There are a number of different plotting options. See below, the examples folder and the wiki for more information.
+There are a number of different plotting options. See below, the [examples folder](https://github.com/MiWalk/M2OPlot/tree/master/Examples) and the wiki for more information.
 
 ## Applying your style and format
 
@@ -31,7 +29,7 @@ For more information see here.
 
 ## More Examples
 
-More examples are provided in the wiki and in the examples folder (under development Oct 2016).
+More examples are provided in the wiki and in the [examples folder](https://github.com/MiWalk/M2OPlot/tree/master/Examples) (under development Oct 2016).
 
 ```matlab
 M2O = M2OPlot_YOURFORMAT();
@@ -43,7 +41,6 @@ M2O.yComment('Y Comment');
 M2O.HideActiveWkBk();
 M2O.Disconnect
 ```
-
 In particular you can
 * Plot line, column, scatter and multi y graphs.
 * Add error bars to your data (note requires Origin 9).
