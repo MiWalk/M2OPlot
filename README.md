@@ -4,14 +4,13 @@ Do your analysis in MATLAB but create plots in Origin.
 
 ## Getting Started
 
-1. Ensure the code in this project is on your MATLAB path and you have Origin installed. Note only works on Windows
+1. Ensure the code in this project is on your MATLAB path and you have Origin installed. Note only works on Windows.
 
 2. Here's a quick example  - ensure you have saved your work in Origin before running this code.
 
 ```matlab
 M2O = M2OPlot();
 M2O.PlotScatter([1 2 3 4],[2 4 6 8],'PlotName','green');
-M2O.Disconnect
 ```
 
 3. There are a number of different plotting options. See below, the examples folder and the wiki for more information.
@@ -26,7 +25,6 @@ Your plotting code will then work exactly as before.
 ```matlab
 M2O = M2OPlot_YOURFORMAT();
 M2O.PlotScatter([1 2 3 4],[2 4 6 8],'PlotName','green');
-M2O.Disconnect
 ```
 
 For more information see here.
@@ -43,6 +41,7 @@ M2O.ylabel('Y Label','Y Units');
 M2O.title('Your graph title');
 M2O.yComment('Y Comment');
 M2O.HideActiveWkBk();
+M2O.Disconnect
 ```
 
 In particular you can
@@ -59,7 +58,7 @@ In particular you can
 ## Important Information
 This code is licensed under the MIT License.
 
-The author of this code has no relationship with MATLAB or OriginPro. 
+The author of this code has no relationship with MATLAB or Origin. 
 
 When the code is started it will connect to an open instance of Origin. If you specify a project it will open that 
 project. If another project is open then any unsaved changes will be LOST. Ensure you have saved changes to an open
