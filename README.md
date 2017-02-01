@@ -4,7 +4,7 @@ Do your analysis in MATLAB but create plots in Origin.
 
 ## Getting Started
 
-1. Ensure the code in this project is on your MATLAB path and you have Origin installed. Note only works on Windows.
+1. Ensure the code in this project is on your MATLAB path and you have Origin installed. Note only works on Windows. It has been tested with OriginPro 2015. There may be problems using this with 2016.
 
 2. Here's a quick example  - ensure you have saved your work in Origin before running this code.
 ```matlab
