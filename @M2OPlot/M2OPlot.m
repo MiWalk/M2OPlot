@@ -83,8 +83,10 @@ classdef M2OPlot < handle
             % This will connect to an existing instance of Origin, or create a new one if none exist
             obj.originObj=actxserver('Origin.ApplicationSI');
             
-            % Make the Origin session visible
-            invoke(obj.originObj, 'Execute', 'doc -mc 1;');
+            % Make the Origin session visible  -mc worked for pre 2016 but
+            % use -m to work with 2016
+            %http://originlab.com/doc/LabTalk/ref/Document-cmd
+            invoke(obj.originObj, 'Execute', 'doc -m 1;');
             if Existing == 0
                 % Clear "dirty" flag in Origin to suppress prompt for saving current project
                 % You may want to replace this with code to handling of saving current project
