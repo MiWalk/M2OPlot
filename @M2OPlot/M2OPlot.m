@@ -290,11 +290,11 @@ classdef M2OPlot < handle
         function AddAnnotation(obj,Text, XPos, YPos)
             %add a label to the graph area using the graph coordinates
             if nargin < 3
-                XPos = 500;
-                YPos = 200;
+                XPos = 0;
+                YPos = 0;
             end
             obj.ActivatePage(obj.ActiveGraphName);
-            obj.ExecuteLabTalk(['label -d ' num2str(XPos) ' ' num2str(YPos) ' ' Text ';']);
+            obj.ExecuteLabTalk(['label -s -a ' num2str(XPos) ' ' num2str(YPos) ' ' Text ';']);
         end
     
           
