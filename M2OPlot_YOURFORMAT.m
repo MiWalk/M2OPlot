@@ -51,6 +51,9 @@ classdef M2OPlot_YOURFORMAT < M2OPlot
             obj.ExecuteLabTalk('layer.x.label.pt = 28;');
             obj.ExecuteLabTalk('layer.y.label.pt = 28;');
             
+            obj.ExecuteLabTalk('xb.fsize = 28;');
+            obj.ExecuteLabTalk('yl.fsize = 28;');
+            
 %           ***** ----- EDIT END ------ ******
         end
     end

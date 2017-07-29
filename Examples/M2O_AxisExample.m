@@ -12,7 +12,11 @@ M2O.HideActiveWkBk();
 
 M2O.PlotLine(x,2*y,'Plot 2','red');
 %Set the x axis manually to a sub section and rescale y to fit data
+%Note you can set the axis start and end points indepdently (below) or
+%together as above
 M2O.xaxis( 0 , pi/2 );
+M2O.xaxisStart(0)
+M2O.xaxisTo(pi/2 )
 M2O.yrescale();
 M2O.HideActiveWkBk();
 
